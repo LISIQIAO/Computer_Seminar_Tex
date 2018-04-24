@@ -1,5 +1,56 @@
 \documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+
+\title{Computer Seminer Homework 1st}
+\author{LI SIQIAO M184631}
+\date{April 20th 2018}
 
 \begin{document}
-gfgfdsdada
+\maketitle
+\section{Chapter 1}
+Our research office is mainly on the reliability of systems and software
+It's mainly based on probability theory to model and evaluate reliability through analysis.
+\par The following probability process is used specifically:
+
+\begin{itemize}
+\item NHPP
+\item CTMC
+\end{itemize}
+
+\maketitle
+\section{Chapter 2}
+We usually use LATEX to make thesis or articles.
+LATEX is a language that contains mathematical formulas.
+It can make the article neat and beautiful 
+\maketitle
+\section{Chapter 3}
+When the probability variable $X$ follows the exponential distribution, the distribution function $F_X(t)$ and the density function $f_X(t)$. 
+\begin{equation}  
+F_X(t)=1-e^{-\lambda t}
+\end{equation}  
+\begin{equation}  
+f_X(t)=\lambda e^{-\lambda t}
+\end{equation}  
+In addition, according to the definition 
+\begin{align}
+E[X]&= \int_0^{\infty} t f_x(t) dt\nonumber\\
+&=[(1-e^{-\lambda t}) t]^\infty_{0}-\int_0^{\infty}(1-e^{-\lambda t}) dt\nonumber\\
+&=[(1-e^{-\lambda t}) t]^\infty_{0}-[t+\frac{1}{\lambda} e^{-\lambda t}]^\infty_{0}\nonumber\\
+&=\frac{1}{\lambda}
+\end{align}
+This equation is the expected value of distribution.
+\maketitle
+\section{Chapter 4}
+\begin{tabular}{|c|c|c|}
+\toprule
+StudentName&StudentNumber&sexuality\\
+\midrule
+LI&M123456&M\\
+\midrule
+ZHANG&M456123&M\\
+\bottomrule
+\end{tabular}
 \end{document}
+
